@@ -17,8 +17,8 @@ Feature: yoti test
       | I have a question about my Yoti |
       | I have a business question      |
     When I expand "I have a question about my Yoti" section
-    And I submit the my Yoti form
-    Then I should see the confirmation message
- When I expand "I have a business question" section
-    And I submit the business form
-    Then I should see the business confirmation message
+    And I submit the "my Yoti" form
+    Then I should see the confirmation message for "my Yoti" form
+    When I expand "I have a business question" section
+    And I submit the "business" form
+    Then I should see the confirmation message for "business" form
